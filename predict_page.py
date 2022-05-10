@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+pip3 install -U scikit-learn
 import sklearn
 
 def load_model():
