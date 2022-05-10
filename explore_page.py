@@ -29,7 +29,7 @@ def clean_education(x):
 
 @st.cache
 def load_data():
-    df = pd.read_csv("/Users/seanj/Documents/ML project/stack-overflow-developer-survey-2020/survey_results_public.csv")
+    df = pd.read_csv("survey_results_public.csv")
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedComp"]]
     df = df.rename({"ConvertedComp": "Salary"}, axis=1)
     df = df[df["Employment"] == "Employed full-time"]
